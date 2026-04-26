@@ -322,7 +322,7 @@ var docs = [
     client: 'Template',
     service: 'SEO',
     date: 'Apr 2026',
-    url: 'proposal-seo.html'
+    url: 'proposals/proposal-seo.html'
   },
   {
     type: 'proposal',
@@ -330,7 +330,7 @@ var docs = [
     client: 'Template',
     service: 'Google Ads',
     date: 'Apr 2026',
-    url: 'proposal-ads.html'
+    url: 'proposals/proposal-ads.html'
   },
   {
     type: 'proposal',
@@ -338,7 +338,7 @@ var docs = [
     client: 'Template',
     service: 'Website',
     date: 'Apr 2026',
-    url: 'proposal-web.html'
+    url: 'proposals/proposal-web.html'
   }
 ];
 
@@ -379,7 +379,7 @@ function renderGrid(gridId, emptyId, countId, items, emptyMsg) {
   }
 
   grid.innerHTML = filtered.map(function(d){
-    return '<a href="https://docs-2o3.pages.dev/' + d.url + '" class="ed-card" target="_blank">' +
+    return '<a href="' + d.url + '" class="ed-card" target="_blank">' +
       '<div class="ed-card-type"><span class="ed-card-type-dot"></span>' + d.service + '</div>' +
       '<div class="ed-card-title">' + d.title + '</div>' +
       '<div class="ed-card-client">' + d.client + '</div>' +
